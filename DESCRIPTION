@@ -1,0 +1,18 @@
+Package: mcts
+Title: Multiple Choice Test Simulator
+Version: 0.0.1.0
+Authors@R: 
+    person(given = "Joshua",
+           family = "Jones",
+           role = c("aut", "cre"),
+           email = "jj4g17@soton.ac.uk")
+Description: Simulates multiple choice tests in R.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.0
+Imports: 
+    shiny,
+    ggplot2,
+    rhandsontable

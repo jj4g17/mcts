@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590446813170.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1530314051",
+    "id" : "B5D825E7",
+    "lastKnownWriteTime" : 1590445758,
+    "last_content_update" : 1590445758,
+    "path" : "D:/Work/R/mcts_git/mcts/R/mcts_outs.R",
+    "project_path" : "R/mcts_outs.R",
+    "properties" : {
+        "cursorPosition" : "10,1",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

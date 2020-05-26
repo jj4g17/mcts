@@ -64,6 +64,7 @@ mcts.default <- function(x = NULL, reps = 1000, truncation = TRUE){ #mcts for nu
 #' MCTS Shiny App
 #'
 #' @description Opens a shiny app in which a test can be configured and analysed with ease.
+#' @import shiny
 #' @export
 #'
 mcts_app <- function(){

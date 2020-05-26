@@ -36,6 +36,9 @@ ui <- fluidPage(
   )
 )
 
+#' @import rhandsontable
+#' @importFrom graphics plot
+#' @importFrom utils write.csv
 server <- function(input, output){
 
   #Update 'data' DF

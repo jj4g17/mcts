@@ -2,7 +2,7 @@
 % Please edit documentation in R/mcts_outs.R
 \name{score}
 \alias{score}
-\title{Calculate probability of scoring over v\\% on a test x}
+\title{Calculate probability of scoring over v percent on a test x}
 \usage{
 score(x, v = 0.4)
 }
@@ -12,8 +12,8 @@ score(x, v = 0.4)
 \item{v}{the threshold score percentage (defaults to 0.40)}
 }
 \value{
-The proportion of students who would score at least v\\% by random guessing.
+The proportion of students who would score at least v percent by random guessing.
 }
 \description{
-Calculate probability of scoring over v\\% on a test x
+Calculate probability of scoring over v percent on a test x
 }

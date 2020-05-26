@@ -30,18 +30,21 @@ mcts <- function(x, ...){
   UseMethod("mcts")
 }
 
-mcts.matrix = function(x, reps = 1000, truncation = TRUE){
+#' @export
+mcts.matrix = function(x, reps = 1000, truncation = TRUE, ...){
   mcts(as.data.frame(x), reps, truncation)
 }
 
-mcts.character <- function(x, header = FALSE, reps = 1000, truncation = TRUE){ #mcts for character (file) input
+#' @export
+mcts.character <- function(x, header = FALSE, reps = 1000, truncation = TRUE, ...){ #mcts for character (file) input
   ###VALIDATE INPUT HERE
   test <- read.csv(x, header = header)
 
   mcts(as.matrix(test), reps, truncation)
 }
 
-mcts.data.frame <- function(x, reps = 1000, truncation = TRUE){
+#' @export
+mcts.data.frame <- function(x, reps = 1000, truncation = TRUE, ...){
   colnames(x) <- c("type", "answers", "misc")
   score <- replicate(reps, sum(apply(x, 1, simq)))
   if(truncation){score <- replace(score, score<0, 0)}
@@ -56,7 +59,8 @@ mcts.data.frame <- function(x, reps = 1000, truncation = TRUE){
   return(structure(l, class = "test"))
 }
 
-mcts.default <- function(x = NULL, reps = 1000, truncation = TRUE){ #mcts for null x/unspecified classes
+#' @export
+mcts.default <- function(x = NULL, reps = 1000, truncation = TRUE, ...){ #mcts for null x/unspecified classes
   if(is.null(x))mcts(cbind(rep("normal", 10), rep(4L, 10), rep(0L, 10)), reps, truncation)
   else warning(paste("test cannot process test of class", class(x), "and can only be used on classes matrix, vector(integer) and character. mcts may be called without an argument for an example case."))
 }
